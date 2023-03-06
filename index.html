@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathao</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Pathao</a>
+        <div class="group">
+            <ul class="navi">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="search">
+                <span class="icon">
+                    <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                    <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                </span>
+            </div>
+            
+        </div>
+        <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+        <div class="searchBox">
+            <input type="text" placeholder="Search Here...">
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container bg-img">
+            <div class="bg-img-text">
+                <h1>Welcome to Our Website</h1>
+                <p>We offer a wide range of services to meet your needs. From ride sharing to delivery to mobile payments, we've got you covered.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+          <i class="fas fa-car"></i>
+          <h3>Ride Sharing</h3>
+          <p>Get a ride to your destination quickly and affordably with our ride-sharing service.</p>
+        </div>
+        <div class="service">
+          <i class="fas fa-motorcycle"></i>
+          <h3>Delivery</h3>
+          <p>Need something delivered fast? Our delivery service can get it to you in no time.</p>
+        </div>
+        <div class="service">
+          <i class="fas fa-money-bill-wave"></i>
+          <h3>Mobile Payments</h3>
+          <p>Make payments quickly and securely using our mobile payment feature.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+          <h2>About Pathao</h2>
+          <p>
+            Pathao is a cutting-edge ride-sharing app that is revolutionizing the way people commute in cities across Asia. With a user-friendly interface and a reliable network of drivers, Pathao offers affordable and efficient transportation solutions to its users. Whether you need a quick ride to the office, a safe ride home from a late-night party, or a hassle-free ride to run errands around town, Pathao has got you covered. 
+          </p>
+          <p>
+            With a focus on safety and convenience, Pathao ensures that all drivers are thoroughly screened and trained to provide a seamless and secure ride experience. In addition, the app offers a range of innovative features such as real-time tracking, in-app payment options, and ride history tracking to enhance the user experience.
+          </p>
+          <p>
+            But Pathao is more than just a ride-sharing app. It is a platform that empowers people to create their own livelihoods by becoming drivers and earning money on their own terms. With Pathao, drivers can enjoy flexible working hours, competitive earnings, and the opportunity to be their own boss.
+          </p>
+          <p>
+            At Pathao, we are committed to making transportation accessible and affordable for everyone. Join us on our mission to create a safer, smarter, and more sustainable future for our cities.
+          </p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+      
+          <input type="submit" value="Send">
+        </form>
+    </section>
+      
+    <footer class="footer">
+        <p class="footer-p">Created by <span> Udeshya Shrestha </span> | All Rights Reserved! </p>
+        <div class="social-icons">
+            <img src="facebook.png" alt="">
+            <img src="instagram.png" alt="">
+        </div>
+    </footer>
+        
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let searchBtn = document.querySelector('.searchBtn');
+        let closeBtn = document.querySelector('.closeBtn');
+        let searchBox = document.querySelector('.searchBox');
+        let navi = document.querySelector('.navi');
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+
+        searchBtn.onclick = function() {
+            searchBox.classList.add('active');
+            closeBtn.classList.add('active');
+            searchBtn.classList.add('active');
+        }
+
+        closeBtn.onclick = function() {
+            searchBox.classList.remove('active');
+            closeBtn.classList.remove('active');
+            searchBtn.classList.remove('active');
+        }
+    </script>
+</body>
+
+</html>
